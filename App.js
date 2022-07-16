@@ -1,7 +1,18 @@
+import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
+// import {createDrawerNavigator} from '@react-navigation/drawer';
+
+
+function SettingsScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Settings Screen</Text>
+    </View>
+  );
+}
 
 function AboutScreen({ navigation }) {
   return (
@@ -34,6 +45,7 @@ function HomeScreen({ navigation }) {
 }
 
 const Stack = createNativeStackNavigator()
+// const Drawer = createDrawerNavigator()
 
 export default function App() {
     return (
